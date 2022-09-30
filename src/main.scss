@@ -1,0 +1,104 @@
+* {
+    font-family: "Montserrat",sans-serif;
+}
+
+body {
+    max-width: 1170px;
+    margin: 0px auto;
+    //padding: 0px;
+
+}
+
+.menu {
+    display: flex;
+    margin-top: 38px;
+    line-height: 56px;
+    &__logo{
+
+    }
+    &__list{
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        font-weight: 500;
+        font-size: 18px;
+        //line-height: 22px;
+        margin-left: 90px;
+
+    }
+    &__link{
+        margin-left: 28px;
+        text-decoration: none;
+        color: #000000;
+        &:hover {
+            color: #FF0000;
+        }
+        &:active {
+            font-weight: 700;
+            font-size: 18px;
+            //line-height: 22px;
+            color: #FF0000;
+            text-decoration: underline #FF0000;
+        }
+    }
+    &__user {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        //line-height: 22px;
+        margin-left: 384px;
+        color: #000000;
+
+    }
+    &__button {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        //line-height: 22px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: #000000;
+        background: #F7F7F7;
+        &:hover {
+            background: #A1A1A1;
+        }
+        //width: 123.57px;
+        //height: 49.28px;
+    }
+}
+
+.main {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    &__block {
+        max-width: 330px;
+        background: #FFFFFF;
+        border: 1px solid rgba(162, 162, 162, 0.6);
+        border-radius: 19px;
+        padding: 20px;
+        &:hover {}
+
+    }
+    &__image {
+        border-radius: 8px;
+    }
+    &__title {
+        margin-top: 18px;
+        margin-bottom: 0px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 44px;
+        color: #000000;
+    }
+    &__description {
+        margin-top: 18px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+}
