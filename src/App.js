@@ -11,15 +11,15 @@ function App() {
   return (
   <div>
       <header>
-        <nav className="menu">
-            <img className="menu__logo" width="112px" height="112px" src={logo}></img>
-          <ul className="menu__list">
-              <li><a href="/main" className="menu__link">Главная</a></li>
-              <li><a href="/main/favorites" className="menu__link">Избранное</a></li>
-              <li><a href="/about" className="menu__link">О проекте</a></li>
+        <nav className="navbar">
+            <img className="navbar__logo" width="112px" height="112px" src={logo}></img>
+          <ul className="navbar__list">
+              <li><a href="/main" className="navbar__link">Главная</a></li>
+              <li><a href="/main/favorites" className="navbar__link">Избранное</a></li>
+              <li><a href="/about" className="navbar__link">О проекте</a></li>
           </ul>
-            <span className="menu__user">Боталов В.</span>
-            <button className="menu__button">Выйти</button>
+            <span className="navbar__user">Боталов В.</span>
+            <button className="navbar__button">Выйти</button>
         </nav>
       </header>
       <section className="main">
