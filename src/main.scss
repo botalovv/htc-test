@@ -14,6 +14,7 @@ body {
     margin-top: 38px;
     line-height: 56px;
     max-height: 112px;
+    align-items: center;
     &__logo{
 
     }
@@ -32,6 +33,7 @@ body {
         color: #000000;
         &:hover {
             color: #FF0000;
+            transition: 0.2s ease-in;
         }
         &:active {
             font-weight: 700;
@@ -48,7 +50,6 @@ body {
         line-height: 56px;
         margin-left: 350px;
         color: #000000;
-
     }
     &__button {
         font-style: normal;
@@ -63,6 +64,7 @@ body {
         height: 50px;
         &:hover {
             background: #A1A1A1;
+            transition: 0.2s ease-in;
         }
 
     }
@@ -73,6 +75,9 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 1170px;
+    &__link {
+        text-decoration: none;
+    }
     &__block {
         max-width: 330px;
         background: #FFFFFF;
@@ -105,5 +110,25 @@ body {
         font-size: 16px;
         line-height: 20px;
         color: #000000;
+    }
+}
+
+/////////////////////ABOUT PAGE STYLES///////////////////
+
+.about {
+    &__title {
+        margin-top: 35px;
+        margin-bottom: 70px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &__paragraph {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+
     }
 }
