@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from "../сomponents/Navbar";
 
 const Characters = () => {
     return (
         <div>
-            Страница с персонажами
+            <Navbar/>
+            
         </div>
     );
 };

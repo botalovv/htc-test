@@ -21,10 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4e9ef863-e4c7-4563-8aca-8be553aed4c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Characters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Characters.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Error.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\htc-test\src\styles" />
       <recent name="D:\Projects\htc-test\src" />
     </key>
   </component>
@@ -75,7 +77,8 @@
       <workItem from="1664797119208" duration="4304000" />
       <workItem from="1664881857222" duration="747000" />
       <workItem from="1664886198942" duration="5158000" />
-      <workItem from="1664952861686" duration="11289000" />
+      <workItem from="1664952861686" duration="11376000" />
+      <workItem from="1665046708739" duration="13817000" />
     </task>
     <servers />
   </component>

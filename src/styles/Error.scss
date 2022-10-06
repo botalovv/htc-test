@@ -1,0 +1,58 @@
+.error {
+  &__logo {
+    margin-top: 38px;
+  }
+}
+
+.section {
+  margin-top: 78px;
+  max-height: 568px;
+  max-width: 629px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  &__banner {
+    display: flex;
+    align-items: center;
+    padding: 0 48px 40px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 25px;
+  }
+  &__p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 58px;
+
+  }
+  &__button {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    background: #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    height: 49px;
+    width: 164px;
+    &:hover {
+      background: #1F4766;
+      transition: 0.15s ease-in;
+      border: none;
+    }
+  }
+}
