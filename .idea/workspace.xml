@@ -21,11 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4e9ef863-e4c7-4563-8aca-8be553aed4c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/BackButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BackButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Characters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Characters.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Error.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/BackButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/BackButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Error.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,8 @@
       <workItem from="1664881857222" duration="747000" />
       <workItem from="1664886198942" duration="5158000" />
       <workItem from="1664952861686" duration="11376000" />
-      <workItem from="1665046708739" duration="13817000" />
+      <workItem from="1665046708739" duration="13990000" />
+      <workItem from="1665131148038" duration="8663000" />
     </task>
     <servers />
   </component>
@@ -114,5 +119,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1664537516328" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1665134852596">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665134852596" />
   </component>
 </project>

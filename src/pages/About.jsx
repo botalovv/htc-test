@@ -1,10 +1,12 @@
 import React from 'react';
 import Navbar from "../сomponents/Navbar";
+import BackButton from "../UI/BackButton";
 
 const About = () => {
     return (
         <div className="about">
             <Navbar/>
+            <BackButton/>
             <h1 className="about__title">
                 О проекте
             </h1>

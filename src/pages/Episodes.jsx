@@ -1,16 +1,14 @@
 import React from 'react';
-import "../main.scss";
 import Navbar from "../сomponents/Navbar";
-import MainSection from "../сomponents/MainSection";
 import BackButton from "../UI/BackButton";
 
-const Main = () => {
+const Episodes = () => {
     return (
         <div>
             <Navbar/>
-            <MainSection/>
+            <BackButton/>
         </div>
     );
 };
 
-export default Main;
+export default Episodes;

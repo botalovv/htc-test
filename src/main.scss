@@ -52,6 +52,7 @@ body {
         line-height: 56px;
         margin-left: 350px;
         color: #000000;
+        padding-right: 23px;
     }
     &__button {
         font-style: normal;
@@ -67,6 +68,7 @@ body {
         &:hover {
             background: #A1A1A1;
             transition: 0.2s ease-in;
+            cursor: pointer;
         }
 
     }
@@ -90,6 +92,7 @@ body {
             box-shadow: 7px 7px 5px grey;
             border: 1px solid rgba(162, 162, 162, 0.6);
             transition: 0.2s ease-in;
+            cursor: pointer;
         }
 
     }

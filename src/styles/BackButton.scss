@@ -1,9 +1,27 @@
-input {
-  border: none;
-  background: #FFFFFF;
+.back {
   margin-top: 39px;
   margin-left: 25px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  max-width: 96px;
+  max-height: 24px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  &__icon {
+    cursor: pointer;
+
+
+  }
+  &__button {
+    position: relative;
+    top: 50%;
+    border: none;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+  }
 }

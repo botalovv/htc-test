@@ -13,7 +13,6 @@ const Error = () => {
             <nav>
                 <img className="error__logo" src={logo}/>
             </nav>
-            <BackButton/>
             <section className="section">
                 <img className="section__banner" src={error}/>
                 <h3 className="section__title">Упс. Кажется вы заблудились. Только без паники!</h3>
