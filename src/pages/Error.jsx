@@ -3,7 +3,6 @@ import logo from "../images/logo.jpg";
 import error from "../images/error.jpg"
 import "../styles/Error.scss"
 import {Link} from "react-router-dom";
-import BackButton from "../UI/BackButton";
 const Error = () => {
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from "../сomponents/Navbar";
-import BackButton from "../UI/BackButton";
+import BackButton from "../сomponents/UI/backButton/BackButton";
 
 const About = () => {
     return (

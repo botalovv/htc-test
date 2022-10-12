@@ -1,9 +1,8 @@
 import React from 'react';
-import "../styles/CharacterItem.scss"
+import "./CharacterItem.scss";
 const CharacterItem = () => {
     return (
         <div>
-            <h3 className="page__title">Персонажи</h3>
            <div className="item">
             <img className="item__image"/>
             <h6 className="item__name">
