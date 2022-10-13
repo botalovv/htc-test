@@ -8,7 +8,6 @@ const Main = () => {
     return (
         <div>
             <Navbar/>
-            <AuthInput placeholder="Введите имя или email"/>
             <MainSection/>
         </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "../images/logo.jpg";
 import {Link} from "react-router-dom";
+import CustomButtonWhite from "./UI/customButtonWhite/CustomButtonWhite";
 
 const Navbar = () => {
     return (
@@ -13,7 +14,9 @@ const Navbar = () => {
                     <li><Link to="/about" className="navbar__link">О проекте</Link></li>
                 </ul>
                 <span className="navbar__user">Боталов В.</span>
-                <button className="navbar__button">Выйти</button>
+                <div className="navbar__button">
+                 <CustomButtonWhite>Выйти</CustomButtonWhite>
+                </div>
             </nav>
         </header>
     );

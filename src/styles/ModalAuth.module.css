@@ -6,6 +6,8 @@
     right: 0;
     display: none;
     background: rgba(0, 0, 0, 0.4);
+    text-align:center;
+
 }
 
 .modalAuth.active {
@@ -13,3 +15,64 @@
     justify-content: center;
     align-items: center;
 }
+
+.modalMain {
+    background: #FFFFFF;
+    border: 1px dashed rgba(162, 162, 162, 0.6);
+    box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    max-width: 370px;
+    max-height: 445px;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+
+}
+
+.modalTitle {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 54px;
+
+}
+
+.modalButton {
+    width: 124px;
+    height: 49px;
+    margin: 0 auto;
+}
+
+.modalCheckbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 54px;
+}
+
+.modalCheckbox input {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+
+.modal4HandRick {
+    position: relative;
+    bottom: 280px;
+    right: 90px
+}
+
+.modalMorty {
+    position: relative;
+    right: 110px;
+    bottom: 120px;
+}
+
+.modalGreenRick {
+    position: relative;
+    top: 40px
+}
+

@@ -57,25 +57,10 @@ body {
         padding-right: 23px;
     }
     &__button {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 56px;
-        border-radius: 5px;
-        box-sizing: border-box;
-        color: #000000;
-        background: #F7F7F7;
         width: 124px;
-        height: 50px;
-        &:hover {
-            background: #A1A1A1;
-            transition: 0.2s ease-in;
-            cursor: pointer;
-        }
-
+        height: 49px;
     }
 }
-
 .main {
     margin-top: 90px;
     display: flex;
@@ -136,6 +121,8 @@ body {
         font-size: 24px;
         line-height: 29px;
         text-align: center;
-
+        padding-bottom: 25px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
