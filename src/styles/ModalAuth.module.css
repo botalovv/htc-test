@@ -51,13 +51,43 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 54px;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
 }
 
 .modalCheckbox input {
     margin-left: 20px;
     margin-right: 10px;
+    display: none;
 }
 
+.modalCheckbox label {
+    margin-right: 10px;
+
+}
+
+.modalCheckbox span {
+    height: 12px;
+    width: 12px;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    background-color:#FFF;
+    border-radius:2px;
+    padding:1px;
+    margin-right: 10px;
+}
+[type=checkbox]:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    font-size:15px;
+    color:#00CA51;
+}
 
 .modal4HandRick {
     position: relative;

@@ -5,8 +5,8 @@ import FourHandRick from "../images/4HandRick.png";
 import GreenRick from "../images/GreenRick.png";
 import ModalMorty from "../images/ModalMorty.png";
 import CustomButtonBlack from "./UI/customButtonBlack/CustomButtonBlack";
-const ModalAuth = ({children, visible, setVisible}) => {
 
+const ModalAuth = ({children, visible, setVisible}) => {
     const classes = [cl.modalAuth];
     if (visible) {
         classes.push(cl.active)
@@ -24,8 +24,11 @@ const ModalAuth = ({children, visible, setVisible}) => {
 
                 </AuthInput>
                 <div className={cl.modalCheckbox}>
+                    <label>
                     <input type="checkbox"/>
-                    <p>Запомнить</p>
+                    <span></span>
+                    Запомнить
+                    </label>
                 </div>
                 <div className={cl.modalButton} >
                     <CustomButtonBlack>Войти</CustomButtonBlack>

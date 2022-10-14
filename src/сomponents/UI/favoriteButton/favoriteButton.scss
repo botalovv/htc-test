@@ -1,0 +1,15 @@
+.favorite__button {
+  width: 241px;
+  height: 41px;
+  background: #00A3FF;
+  border: 1px solid rgba(162, 162, 162, 0.6);
+  border-radius: 5px;
+
+  //////////////
+  margin-left: 400px;
+  //////////////
+  &:hover {
+    background: #008BDA;
+    border: 1px solid rgba(162, 162, 162, 0.6);
+  }
+}

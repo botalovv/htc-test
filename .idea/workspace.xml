@@ -21,15 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4e9ef863-e4c7-4563-8aca-8be553aed4c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Locations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Locations.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/ModalAuth.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ModalAuth.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/сomponents/ModalAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/ModalAuth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/authInput/authInput.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/authInput/authInput.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/backButton/BackButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/backButton/BackButton.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\htc-test\src\сomponents\UI\CustomSelect" />
       <recent name="D:\Projects\htc-test\src\сomponents\UI\characterItem" />
       <recent name="D:\Projects\htc-test\src\сomponents\UI\backButton" />
       <recent name="D:\Projects\htc-test\src\styles" />
@@ -90,7 +85,8 @@
       <workItem from="1665469432492" duration="8597000" />
       <workItem from="1665572262845" duration="8000000" />
       <workItem from="1665651877236" duration="10119000" />
-      <workItem from="1665667488386" duration="4138000" />
+      <workItem from="1665667488386" duration="4741000" />
+      <workItem from="1665751731356" duration="9065000" />
     </task>
     <servers />
   </component>
@@ -126,9 +122,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1664537516328" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1665134852596">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1665769552518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665134852596" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665769552518" />
   </component>
 </project>
