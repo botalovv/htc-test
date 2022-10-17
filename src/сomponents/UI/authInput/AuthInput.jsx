@@ -1,10 +1,8 @@
 import React from 'react';
-import "./authInput.scss"
-const AuthInput = (props) => {
+import "./AuthInput.scss"
+const AuthInput = ({children}) => {
     return (
-        <input className="input__auth">
-            {props.children}
-
+        <input type="text" className="input__auth" placeholder={children}>
         </input>
     );
 };

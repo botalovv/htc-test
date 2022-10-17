@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
+  display: flex;
   &__icon {
     cursor: pointer;
 
@@ -21,8 +22,5 @@
     line-height: 22px;
     cursor: pointer;
     padding-left: 10px;
-    margin-bottom: 10px;
-
-
   }
 }

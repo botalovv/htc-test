@@ -43,7 +43,7 @@
 .modalButton {
     width: 124px;
     height: 49px;
-    margin: 0 auto;
+    margin: 0 auto 35px;
 }
 
 .modalCheckbox {
@@ -56,6 +56,11 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    cursor: pointer;
+
+}
+
+.modalCheckbox {
 }
 
 .modalCheckbox input {
@@ -64,9 +69,15 @@
     display: none;
 }
 
-.modalCheckbox label {
-    margin-right: 10px;
+.modalPassword {
+    display: flex;
 
+}
+
+.modalPassword svg {
+    position: absolute;
+    left: 300px;
+    cursor: pointer;
 }
 
 .modalCheckbox span {
@@ -106,3 +117,8 @@
     top: 40px
 }
 
+.modalIcon {
+    position: absolute;
+    padding-bottom: 10px;
+    bottom: 205px;
+}
