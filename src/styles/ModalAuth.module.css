@@ -78,6 +78,7 @@
     position: absolute;
     left: 300px;
     cursor: pointer;
+    top: 20px;
 }
 
 .modalCheckbox span {

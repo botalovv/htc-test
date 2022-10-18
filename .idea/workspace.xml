@@ -21,11 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4e9ef863-e4c7-4563-8aca-8be553aed4c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/ModalAuth.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ModalAuth.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/сomponents/ModalAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/ModalAuth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/authInput/authInput.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/backButton/BackButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/backButton/BackButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/customButtonWhite/CustomButtonWhite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/customButtonWhite/CustomButtonWhite.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/favoriteButton/favoriteButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/favoriteButton/favoriteButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/сomponents/UI/favoriteButton/favoriteButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/favoriteButton/favoriteButton.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +94,9 @@
       <workItem from="1665667488386" duration="4741000" />
       <workItem from="1665751731356" duration="9260000" />
       <workItem from="1665866086945" duration="5000" />
-      <workItem from="1666001267267" duration="6580000" />
+      <workItem from="1666001267267" duration="6700000" />
+      <workItem from="1666066101776" duration="30000" />
+      <workItem from="1666076710605" duration="11819000" />
     </task>
     <servers />
   </component>

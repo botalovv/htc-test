@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from "../images/logo.jpg";
 import {Link} from "react-router-dom";
 import CustomButtonWhite from "./UI/customButtonWhite/CustomButtonWhite";
+import ModalAuth from "./ModalAuth";
 
 const Navbar = () => {
+
+    const [modal, setModal] = useState(false);
+
     return (
         <header>
             <nav className="navbar">
@@ -15,8 +19,9 @@ const Navbar = () => {
                 </ul>
                 <span className="navbar__user">Боталов В.</span>
                 <div className="navbar__button">
-                 <CustomButtonWhite>Выйти</CustomButtonWhite>
+                    <CustomButtonWhite onClick={() => setModal(true)}>Войти</CustomButtonWhite>
                 </div>
+                <ModalAuth visible={modal} setVisible={setModal} />
             </nav>
         </header>
     );

@@ -13,17 +13,14 @@ const ModalAuth = ({children, visible, setVisible}) => {
     }
 
     return (
-        <div className={classes.join(" ")}>
+        <div className={classes.join(" ")} onClick={() => setVisible(false)}>
             <img className={cl.modalGreenRick} src={GreenRick} alt=""/>
             <img className={cl.modal4HandRick} src={FourHandRick} alt=""/>
             <img className={cl.modalMorty} src={ModalMorty} alt=""/>
             <form className={cl.modalMain}>
                 <h3 className={cl.modalTitle}>Вход</h3>
-                <AuthInput type="text"/>
-
-                    <AuthInput type="text" placeholder="Введите логин или E-mail">
-
-                    </AuthInput>
+                <AuthInput type="text" placeholder="Введите логин или E-mail"/>
+                <AuthInput type="button" placeholder="Введите пароль"/>
                 <div className={cl.modalPassword}>
                     <button className={cl.modalIcon}>
                         <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">

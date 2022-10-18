@@ -1,8 +1,8 @@
 import React from 'react';
 import "./CustomButtonWhite.scss"
-const CustomButtonWhite = ({ children}) => {
+const CustomButtonWhite = ({ children, ...props}) => {
     return (
-        <button className="whiteButton">
+        <button {...props} className="whiteButton">
             {children}
         </button>
     );
