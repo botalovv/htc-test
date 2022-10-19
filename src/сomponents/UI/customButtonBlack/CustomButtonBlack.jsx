@@ -1,9 +1,9 @@
 import React from 'react';
 import "./CustomButtonBlack.scss"
 
-const CustomButtonBlack = ({children}) => {
+const CustomButtonBlack = ({children, ...props}) => {
     return (
-        <button className="blackButton">
+        <button {...props} className="blackButton">
             {children}
         </button>
     );

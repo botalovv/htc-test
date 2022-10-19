@@ -14,10 +14,11 @@ const ModalAuth = ({children, visible, setVisible}) => {
 
     return (
         <div className={classes.join(" ")} onClick={() => setVisible(false)}>
-            <img className={cl.modalGreenRick} src={GreenRick} alt=""/>
-            <img className={cl.modal4HandRick} src={FourHandRick} alt=""/>
-            <img className={cl.modalMorty} src={ModalMorty} alt=""/>
-            <form className={cl.modalMain}>
+            <div className={cl.modalContent} onClick={(e) => e.stopPropagation()}>
+                <img className={cl.modalGreenRick} src={GreenRick} alt=""/>
+                <img className={cl.modal4HandRick} src={FourHandRick} alt=""/>
+                <img className={cl.modalMorty} src={ModalMorty} alt=""/>
+            <form className={cl.modalForm}>
                 <h3 className={cl.modalTitle}>Вход</h3>
                 <AuthInput type="text" placeholder="Введите логин или E-mail"/>
                 <AuthInput type="button" placeholder="Введите пароль"/>
@@ -39,6 +40,7 @@ const ModalAuth = ({children, visible, setVisible}) => {
                     <CustomButtonBlack>Войти</CustomButtonBlack>
                 </div>
             </form>
+            </div>
         </div>
     );
 };

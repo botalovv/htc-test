@@ -36,7 +36,7 @@ body {
         color: #000000;
         &:hover {
             color: #FF0000;
-            transition: 0.2s ease-in;
+            transition: 0.2s ease-in-out;
         }
         &:active {
             font-weight: 700;
@@ -58,6 +58,11 @@ body {
     &__button {
         width: 124px;
         height: 49px;
+        justify-content: flex-end;
+    }
+    &__registration {
+        margin-left: 350px;
+        margin-right: 40px;
     }
 }
 .main {

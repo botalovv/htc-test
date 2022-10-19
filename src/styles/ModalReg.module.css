@@ -1,0 +1,87 @@
+.modalAuth {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    text-align:center;
+
+}
+
+.modalAuth.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalFormReg {
+    top: 260px;
+    top: 260px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px dashed rgba(162, 162, 162, 0.6);
+    box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    max-width: 370px;
+    max-height: 637px;
+}
+
+.modalTitle {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #000000;
+
+}
+
+.modalPassword {
+    display: flex;
+
+}
+
+.modalPassword svg {
+    position: absolute;
+    left: 300px;
+    cursor: pointer;
+    top: 20px;
+}
+
+.modalIcon {
+    position: absolute;
+    padding-bottom: 10px;
+    bottom: 187px;
+}
+
+.modalSvg {
+    top: 50px;
+}
+
+.modal4HandRick {
+    position: relative;
+    bottom: 380px;
+    right: 90px
+}
+
+.modalMorty {
+    position: relative;
+    right: 110px;
+    bottom: 120px;
+}
+
+.modalGreenRick {
+    position: relative;
+    top: 40px
+}
+
+.modalContent {
+
+}

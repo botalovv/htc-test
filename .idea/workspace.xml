@@ -22,14 +22,14 @@
     <list default="true" id="4e9ef863-e4c7-4563-8aca-8be553aed4c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Episodes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Episodes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/ModalAuth.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ModalAuth.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/сomponents/ModalAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/ModalAuth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/customButtonWhite/CustomButtonWhite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/customButtonWhite/CustomButtonWhite.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/favoriteButton/favoriteButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/favoriteButton/favoriteButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/favoriteButton/favoriteButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/favoriteButton/favoriteButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/ModalRegistration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/ModalRegistration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/backButton/BackButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/backButton/BackButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/customButtonBlack/CustomButtonBlack.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/customButtonBlack/CustomButtonBlack.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/customButtonWhite/CustomButtonWhite.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/customButtonWhite/CustomButtonWhite.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,8 @@
       <workItem from="1665866086945" duration="5000" />
       <workItem from="1666001267267" duration="6700000" />
       <workItem from="1666066101776" duration="30000" />
-      <workItem from="1666076710605" duration="11819000" />
+      <workItem from="1666076710605" duration="12515000" />
+      <workItem from="1666167709444" duration="16190000" />
     </task>
     <servers />
   </component>
