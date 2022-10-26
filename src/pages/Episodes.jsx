@@ -10,7 +10,7 @@ const Episodes = () => {
         <div>
             <Navbar/>
             <BackButton/>
-            <ModalRegistration/>
+            {/*<ModalRegistration visible={true}/>*/}
         </div>
     );
 };

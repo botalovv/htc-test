@@ -24,12 +24,12 @@
       <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Episodes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Episodes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/ModalAuth.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ModalAuth.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/ModalReg.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/сomponents/ModalAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/ModalAuth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/сomponents/UI/ModalRegistration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/ModalRegistration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/backButton/BackButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/backButton/BackButton.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/customButtonBlack/CustomButtonBlack.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/customButtonBlack/CustomButtonBlack.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/customButtonWhite/CustomButtonWhite.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/customButtonWhite/CustomButtonWhite.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/сomponents/UI/authInput/AuthInput.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,13 @@
       <workItem from="1666001267267" duration="6700000" />
       <workItem from="1666066101776" duration="30000" />
       <workItem from="1666076710605" duration="12515000" />
-      <workItem from="1666167709444" duration="16190000" />
+      <workItem from="1666167709444" duration="16937000" />
+      <workItem from="1666249914431" duration="93000" />
+      <workItem from="1666250263579" duration="6639000" />
+      <workItem from="1666338529307" duration="6893000" />
+      <workItem from="1666603391578" duration="4621000" />
+      <workItem from="1666703526026" duration="3300000" />
+      <workItem from="1666767542122" duration="10245000" />
     </task>
     <servers />
   </component>
@@ -133,9 +139,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1664537516328" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1665769552518">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1666775294248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665769552518" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1666775294248" />
   </component>
 </project>

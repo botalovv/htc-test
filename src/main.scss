@@ -55,11 +55,18 @@ body {
         color: #000000;
         padding-right: 23px;
     }
+    &__bttns {
+        display: flex;
+        margin-left: auto;
+    }
+    &__regButton {
+        padding-right: 40px;
+    }
     &__button {
         width: 124px;
         height: 49px;
-        justify-content: flex-end;
     }
+
     &__registration {
         margin-left: 350px;
         margin-right: 40px;

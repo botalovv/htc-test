@@ -7,7 +7,6 @@
     display: none;
     background: rgba(0, 0, 0, 0.4);
     text-align:center;
-
 }
 
 .modalContent {
@@ -133,5 +132,5 @@
 .modalIcon {
     position: absolute;
     padding-bottom: 10px;
-    bottom: 205px;
+    bottom: 225px;
 }
