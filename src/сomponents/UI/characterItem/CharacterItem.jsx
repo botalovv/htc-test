@@ -1,6 +1,8 @@
 import React from 'react';
 import "./CharacterItem.scss";
+
 const CharacterItem = () => {
+
     return (
         <div>
            <div className="item">

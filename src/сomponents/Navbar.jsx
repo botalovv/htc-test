@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import logo from "../images/logo.jpg";
 import {Link} from "react-router-dom";
-import CustomButtonWhite from "./UI/customButtonWhite/CustomButtonWhite";
 import ModalAuth from "./ModalAuth";
 import RegButton from "./UI/regButton/RegButton";
 import CustomButtonBlack from "./UI/customButtonBlack/CustomButtonBlack";

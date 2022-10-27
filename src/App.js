@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import "./main.scss";
 import Main from "./pages/Main";
 import About from "./pages/About";
@@ -10,10 +10,8 @@ import Locations from "./pages/Locations";
 import Favorites from "./pages/Favorites";
 function App() {
 
-
-
-
   return (
+
     <Router>
         <Routes>
             <Route path="/" element={<Main/>}/>

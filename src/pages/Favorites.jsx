@@ -3,6 +3,7 @@ import Navbar from "../сomponents/Navbar";
 import BackButton from "../сomponents/UI/backButton/BackButton";
 
 const Favorites = () => {
+
     return (
         <div>
             <Navbar/>

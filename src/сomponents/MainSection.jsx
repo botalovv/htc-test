@@ -6,6 +6,7 @@ import "../main.scss";
 import {Link} from "react-router-dom";
 
 const MainSection = () => {
+
     return (
         <section className="main">
             <div className="main__block">

@@ -5,6 +5,7 @@ import CharacterItem from "../сomponents/UI/characterItem/CharacterItem";
 import "../styles/Characters.scss"
 
 const Characters = () => {
+
     return (
         <div>
             <Navbar/>
