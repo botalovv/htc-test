@@ -56,7 +56,7 @@ const ModalRegistration = ({children, visible, setVisible}) => {
                                 </svg>
                             </button>
                         </div>
-                        <AuthInput id="repeatPassword" type="password" placeholder="Повоторите пароль"/>
+                        <AuthInput required id="repeatPassword" type="password" placeholder="Повоторите пароль"/>
                         <div>
                             <button onClick={showPassword2} type="button" className={cl.viewButton2}>
                                 <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">

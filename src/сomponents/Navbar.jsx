@@ -8,9 +8,9 @@ import ModalRegistration from "./UI/ModalRegistration";
 
 const Navbar = () => {
 
-    const [modal, setModal] = useState(false);
+    const [modalActive, setModalActive] = useState(false);
 
-    const [modalReg, setModalReg] = useState(false);
+    const [modalRegActive, setModalRegActive] = useState(false);
 
     return (
         <header>
@@ -24,15 +24,15 @@ const Navbar = () => {
                 {/*<span className="navbar__user">Боталов В.</span>*/}
                 <div className="navbar__bttns">
                     <div className="navbar__regButton">
-                        <RegButton onClick={() => setModalReg(true)}>Регистрация</RegButton>
+                        <RegButton onClick={() => setModalRegActive(true)}>Регистрация</RegButton>
                     </div>
                     <div className="navbar__button">
-                        <CustomButtonBlack onClick={() => setModal(true)}>Войти</CustomButtonBlack>
+                        <CustomButtonBlack onClick={() => setModalActive(true)}>Войти</CustomButtonBlack>
                     </div>
                 </div>
             </nav>
-            <ModalAuth visible={modal} setVisible={setModal} />
-            <ModalRegistration visible={modalReg} setVisible={setModalReg}/>
+            <ModalAuth visible={modalActive} setVisible={setModalActive} />
+            <ModalRegistration visible={modalRegActive} setVisible={setModalRegActive}/>
         </header>
     );
 };

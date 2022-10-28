@@ -1,24 +1,24 @@
 import React from 'react';
 import "./CharacterItem.scss";
 
-const CharacterItem = () => {
+const CharacterItem = (props) => {
 
     return (
         <div>
-           <div className="item">
-            <img className="item__image"/>
-            <h6 className="item__name">
-                Rick Sanchez
-            </h6>
-            <p className="item__info">
-                Раса:
-            </p>
-            <p className="item__info">
-                Место происхождения:
-            </p>
-            <p className="item__info">
-                Последняя локация:
-            </p>
+           <div className="item item-list">
+            {/*<img className="item__image item-list__image"/>*/}
+            {/*<h6 className="item__name item-list__name">*/}
+            {/*    {name}*/}
+            {/*</h6>*/}
+            {/*<p className="item__info item-list__info">*/}
+            {/*    Раса: {species}*/}
+            {/*</p>*/}
+            {/*<p className="item__info item-list__info">*/}
+            {/*    Место происхождения: {origin}*/}
+            {/*</p>*/}
+            {/*<p className="item__info item-list__info">*/}
+            {/*    Последняя локация:*/}
+            {/*</p>*/}
            </div>
         </div>
     );

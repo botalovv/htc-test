@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import cl from "../styles/ModalAuth.module.css"
 import AuthInput from "./UI/authInput/AuthInput";
 import FourHandRick from "../images/4HandRick.png";
@@ -23,6 +23,60 @@ const ModalAuth = ({children, visible, setVisible}) => {
         }
     }
 
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [emailDirty, setEmailDirty] = useState(false);
+    const [passwordDirty, setPasswordDirty] = useState(false);
+    const [emailError, setEmailError] = useState("E-mail не может быть пустым");
+    const [passwordError, setPasswordError] = useState("Пароль не может быть пустым");
+    const [formValid, setFormValid] = useState(false);
+
+    useEffect(() => {
+        if (emailError || passwordError) {
+            setFormValid(false)
+        }
+        else {
+            setFormValid(true)
+        }
+    }, [emailError, passwordError])
+
+
+    const emailHandler = (e) => {
+        setEmail(e.target.value);
+        const re =
+            /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if (!re.test(String(e.target.value).toLowerCase())) {
+            setEmailError("Некорректный e-mail");
+        }
+        else {
+            setEmailError("");
+        }
+    }
+
+    const passwordHandler = (e) => {
+        setPassword(e.target.value);
+        if (e.target.value.length < 6 || e.target.value.length > 50) {
+            setPasswordError("В пароле должно быть не менее 6 и не более 50 символов");
+        }
+        else if (!e.target.value) {
+            setPasswordError("Пароль не может быть пустым");
+        }
+        else {
+            setPasswordError("");
+        }
+    }
+
+    const blurHandler = (e) => {
+        switch (e.target.type) {
+            case "text" :
+                setEmailDirty(true);
+                break
+            case "password" :
+                setPasswordDirty(true);
+                break
+        }
+    }
+
     return (
         <div className={classes.join(" ")} onClick={() => setVisible(false)}>
             <div className={cl.modalContent} onClick={(e) => e.stopPropagation()}>
@@ -31,8 +85,10 @@ const ModalAuth = ({children, visible, setVisible}) => {
                 <img className={cl.modalMorty} src={ModalMorty} alt=""/>
             <form className={cl.modalForm}>
                 <h3 className={cl.modalTitle}>Вход</h3>
-                <AuthInput type="text" placeholder="Введите логин или E-mail"/>
-                <AuthInput id="pswrd" type="password" placeholder="Введите пароль"/>
+                {(emailDirty && emailError) && <div>{emailError}</div>}
+                <AuthInput onChange={(e) => emailHandler(e)} onBlur={(e) => blurHandler(e)} type="text" placeholder="Введите логин или E-mail"/>
+                {(passwordDirty && passwordError) && <div>{passwordError}</div>}
+                <AuthInput onChange={e => passwordHandler(e)} onBlur={(e) => blurHandler(e)} id="pswrd" type="password" placeholder="Введите пароль"/>
                 <div className={cl.modalPassword}>
                     <button onClick={showPassword} type="button" className={cl.modalIcon}>
                         <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +104,7 @@ const ModalAuth = ({children, visible, setVisible}) => {
                     </label>
                 </div>
                 <div className={cl.modalButton} >
-                    <CustomButtonBlack>Войти</CustomButtonBlack>
+                    <CustomButtonBlack disabled={!formValid}>Войти</CustomButtonBlack>
                 </div>
             </form>
             </div>
