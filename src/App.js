@@ -8,6 +8,7 @@ import Error from "./pages/Error";
 import Episodes from "./pages/Episodes";
 import Locations from "./pages/Locations";
 import Favorites from "./pages/Favorites";
+
 function App() {
 
   return (
