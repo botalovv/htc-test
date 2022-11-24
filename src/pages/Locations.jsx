@@ -23,7 +23,9 @@ const Locations = () => {
         <div>
             <Navbar/>
             <BackButton/>
-            <h3 className="page__title">Локации</h3>
+            <h3 className="page__title">
+                Локации
+            </h3>
             <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-between"}}>
             {locations.map(location =>
                 <LocationItem location={location} key={location.id}/>

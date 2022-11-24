@@ -1,0 +1,49 @@
+.episode {
+  &__container {
+    border: 1px dashed rgba(162, 162, 162, 0.6);
+    border-radius: 5px;
+    width: 1170px;
+    height: 164px;
+    margin-top: 35px;
+    &:hover {
+      box-shadow: 7px 7px 5px grey;
+      transition: 0.2s ease-in;
+      cursor: pointer;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    margin-top: 15px;
+    margin-left: 29px;
+  }
+  &__left {
+    width: 270px;
+    height: 66px;
+    margin-left: 29px;
+    float: left;
+
+  }
+  &__right {
+    width: 842px;
+    height: 66px;
+    margin-right: 29px;
+    float: right;
+  }
+  &__variable {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F4766;
+    margin-top: 5px;
+  }
+  &__answer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 5px;
+  }
+}
