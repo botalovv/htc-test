@@ -8,7 +8,7 @@ import "../styles/Characters.scss"
 
 const Characters = () => {
 
-    const [items, setItems] = useState([
+    const [characters, setCharacters] = useState([
         // {id: 1, name: "Rick Sanchez", race: "Human"}
     ])
 
@@ -18,7 +18,7 @@ const Characters = () => {
         })
         .then((data) => {
             // console.log(data.results)
-            setItems(data.results)
+            setCharacters(data.results)
 
         })
 
@@ -27,9 +27,11 @@ const Characters = () => {
             <Navbar/>
             <BackButton/>
             <h3 className="page__title">Персонажи</h3>
-            {items.map(item =>
-                <CharacterItem item={item}/>
+            <div className="item__container" style={{width:"1170px"}}>
+            {characters.map(character =>
+                <CharacterItem character={character} key={character.id}/>
             )}
+            </div>
         </div>
     );
 };

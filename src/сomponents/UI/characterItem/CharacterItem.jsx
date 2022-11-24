@@ -5,17 +5,17 @@ const CharacterItem = (props) => {
 
 
     return (
-        <div>
+
            <div className="item item-list">
-               <img className="item__image item-list__image" src={props.item.image}/>
-               <div className="item__inline">
+               <img className="item__image item-list__image" src={props.character.image}/>
+               <span className="item__inline">
                    <h6 className="item__name item-list__name">
-                       {props.item.name}
+                       {props.character.name}
                    </h6>
-               </div>
+               </span>
                 <div className="item__variable">
                     <p className="item__info item-list__info">
-                        Раса:{props.item.race}
+                        Раса:
                     </p>
                     <p className="item__info item-list__info">
                         Место происхождения:
@@ -26,17 +26,17 @@ const CharacterItem = (props) => {
                 </div>
                    <div className="item__fetched">
                        <p className="item__race">
-                           {props.item.species}
+                           {props.character.species}
                        </p>
                        <p className="item__origin">
-                           {props.item.origin.name}
+                           {props.character.origin.name}
                        </p>
                        <p className="item__location">
-                           {props.item.location.name}
+                           {props.character.location.name}
                        </p>
                    </div>
            </div>
-        </div>
+
     );
 };
 

@@ -4,18 +4,21 @@
   max-height: 164px;
   display: flex;
   margin-right: 30px;
+  margin-bottom: 35px;
 
   &__inline {
-    display: inline-block;
+    margin-left: 177px;
     height: 24px;
+    max-width: 300px;
     white-space: nowrap;
+    position: absolute;
   }
   &__variable {
     width: 162px;
     height: 118px;
     margin-left: 15px;
     margin-top: 46px;
-    float: left;
+
   }
   &__image {
     width: 162px;
@@ -37,7 +40,7 @@
   &__fetched {
     width: 229px;
     height: 118px;
-    margin-top: 43px;
+    margin-top: 46px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
