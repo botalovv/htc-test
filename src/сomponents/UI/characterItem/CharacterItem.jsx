@@ -3,38 +3,45 @@ import "./CharacterItem.scss";
 
 const CharacterItem = (props) => {
 
+    let isList = false;
+    let listClass = "item "
+    listClass += isList === false ? "" : "item-list"
 
     return (
 
-           <div className="item item-list">
-               <img className="item__image item-list__image" src={props.character.image}/>
-               <span className="item__inline">
+           <div className={listClass}>
+               <div>
+                 <img className="item__image item-list__image" src={props.character.image}/>
+               </div>
+               <div className="item__inline">
                    <h6 className="item__name item-list__name">
                        {props.character.name}
                    </h6>
-               </span>
-                <div className="item__variable">
-                    <p className="item__info item-list__info">
-                        Раса:
-                    </p>
-                    <p className="item__info item-list__info">
-                        Место происхождения:
-                    </p>
-                    <p className="item__info item-list__info">
-                        Последняя локация:
-                    </p>
-                </div>
-                   <div className="item__fetched">
-                       <p className="item__race">
-                           {props.character.species}
-                       </p>
-                       <p className="item__origin">
-                           {props.character.origin.name}
-                       </p>
-                       <p className="item__location">
-                           {props.character.location.name}
-                       </p>
-                   </div>
+               </div>
+               <div className="item__race">
+                   <p className="item__race_sample">
+                       Раса:
+                   </p>
+                   <p className="item__race_value">
+                       {props.character.species}
+                   </p>
+               </div>
+               <div className="item__origin">
+                   <p className="item__origin_sample">
+                       Место происхождения:
+                   </p>
+                   <p className="item__origin_value">
+                       {props.character.origin.name}
+                   </p>
+               </div>
+               <div className="item__location">
+                   <p className="item__location_sample">
+                       Последняя локация:
+                   </p>
+                   <p className="item__location_value">
+                       {props.character.location.name}
+                   </p>
+               </div>
            </div>
 
     );

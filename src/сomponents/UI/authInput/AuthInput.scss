@@ -11,12 +11,12 @@
   outline: none;
   box-sizing: border-box;
   margin-bottom: 35px;
-  margin-left: 20px;
-  margin-right: 20px;
+  //margin-left: 20px;
+  margin-left: auto;
 
 
   &:focus {
-    border: 2px solid #00A3FF;;
+    border: 2px solid #00A3FF;
   }
 }
 input[type="text"]{padding: 12px;}

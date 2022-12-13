@@ -2,6 +2,7 @@ import React from 'react';
 import "./LocationItem.scss"
 
 const LocationItem = ({location}) => {
+
     return (
         <div className="location">
             <div className="location__container">

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Navbar from "../сomponents/Navbar";
 import BackButton from "../сomponents/UI/backButton/BackButton";
 import EpisodeItem from "../сomponents/UI/episodeItem/EpisodeItem";
@@ -7,13 +7,15 @@ const Episodes = () => {
 
     const [episodes, setEpisodes] = useState([]);
 
-    fetch("https://rickandmortyapi.com/api/episode")
-        .then((res) => {
-            return res.json();
-        })
-        .then((data) => {
-            setEpisodes(data.results)
-        })
+    useEffect(() => {
+        fetch("https://rickandmortyapi.com/api/episode")
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                setEpisodes(data.results)
+            })
+    }, [])
 
     return (
         <div>

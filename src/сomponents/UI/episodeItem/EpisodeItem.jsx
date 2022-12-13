@@ -7,7 +7,7 @@ const EpisodeItem = ({episode}) => {
 
     // let characters = [];
     //
-    // {episode.characters.map(character => fetch(character)
+    // {(episode.characters).map(character => fetch(character)
     //     .then((res)=> {
     //          characters.push(res.name)}))
     //     }
