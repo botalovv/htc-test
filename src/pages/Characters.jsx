@@ -3,11 +3,11 @@ import Navbar from "../сomponents/Navbar";
 import BackButton from "../сomponents/UI/backButton/BackButton";
 import CharacterItem from "../сomponents/UI/characterItem/CharacterItem";
 import "../styles/Characters.scss"
-import {ReactComponent as Vector} from "../icons/Vector.svg";
 import AuthInput from "../сomponents/UI/authInput/AuthInput";
 import CustomSelect from "../сomponents/UI/CustomSelect/CustomSelect";
 import {ReactComponent as CharacterList} from "../icons/CharacterList.svg";
 import {ReactComponent as CharacterWrap} from "../icons/CharacterWrap.svg";
+
 
 const Characters = () => {
 

@@ -1,0 +1,17 @@
+.fav {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  float: right;
+
+  &__horizontal {
+    position: absolute;
+    left: 10px;
+    top: 18px
+  }
+  &__vertical {
+    position: absolute;
+    left: 18px;
+    top: 11px;
+  }
+}

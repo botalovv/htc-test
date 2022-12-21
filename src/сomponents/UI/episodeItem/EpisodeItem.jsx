@@ -12,10 +12,13 @@ const EpisodeItem = ({episode}) => {
     //          characters.push(res.name)}))
     //     }
 
-    // {episode.characters.map(character => fetch(episode.characters)
-    //     .then((res) => {
-    //         setEpisodeCharacters(res.name)
-    //     }))}
+    function characterFetch () {
+
+    }
+    episode.characters.map(character => fetch(episode.characters)
+        .then((res) => {
+            setEpisodeCharacters(res.name)
+        }))
 
 
     //

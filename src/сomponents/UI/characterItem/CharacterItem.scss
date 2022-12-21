@@ -8,12 +8,19 @@
     transition: 0.2s ease-in;
   }
 
-  &__inline {
+  &__top {
     margin-left: 177px;
     height: 24px;
     max-width: 300px;
     white-space: nowrap;
+    display: flex;
+    margin-top: 14px;
 
+    &_name {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   &__variable {
     width: 162px;
@@ -21,20 +28,13 @@
     margin-left: 15px;
     margin-top: 8px;
     float: left;
-
-
   }
   &__image {
     width: 162px;
-    height: 162px;
+    height: 164px;
     float: left;
   }
-  &__name {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    margin-top: 14px;
-  }
+
   &__info {
     font-weight: 400;
     font-size: 12px;
@@ -54,7 +54,7 @@
   &__race {
     display: flex;
     padding-left: 15px;
-    padding-top: 8px;
+    margin-top: 17px;
     &_value{
       font-style: normal;
       font-weight: 500;
@@ -110,6 +110,23 @@
       line-height: 17px;
       color: #000000;
     }
+  }
+  &__status {
+    margin-left: auto;
+    display: flex;
+    &_mark {
+      vertical-align: middle;
+
+    }
+    &_value {
+      font-weight: 500;
+      font-size: 14px;
+      color: #000000;
+    }
+  }
+  &__button {
+    position: absolute;
+    
   }
 }
 .page__title {
