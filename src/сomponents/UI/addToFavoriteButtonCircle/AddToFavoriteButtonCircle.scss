@@ -1,9 +1,14 @@
 .fav {
   position: relative;
-  border: none;
-  background-color: transparent;
-  float: right;
+  top: 20px;
 
+  &__button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    left: 550px;
+    bottom: -2px;
+  }
   &__horizontal {
     position: absolute;
     left: 10px;

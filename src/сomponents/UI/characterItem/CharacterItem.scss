@@ -7,21 +7,41 @@
     box-shadow: 7px 7px 5px grey;
     transition: 0.2s ease-in;
   }
+  &__image {
+    width: 162px;
+    height: 164px;
+    float: left;
+  }
 
   &__top {
     margin-left: 177px;
     height: 24px;
-    max-width: 300px;
+    max-width: 400px;
     white-space: nowrap;
     display: flex;
     margin-top: 14px;
-
+    align-items: center;
+    justify-content: space-between;
     &_name {
       font-weight: 700;
       font-size: 20px;
       line-height: 24px;
     }
+    &_container {
+      display: flex;
+      margin-right: 15px;
+    }
+    &_mark {
+      margin-top: 6px;
+      margin-right: 6px;
+    }
+    &_value {
+      font-weight: 500;
+      font-size: 14px;
+      color: #000000;
+    }
   }
+
   &__variable {
     width: 162px;
     height: 118px;
@@ -29,11 +49,7 @@
     margin-top: 8px;
     float: left;
   }
-  &__image {
-    width: 162px;
-    height: 164px;
-    float: left;
-  }
+
 
   &__info {
     font-weight: 400;
@@ -107,26 +123,26 @@
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      line-height: 17px;
+      line-height: 13px;
       color: #000000;
     }
   }
   &__status {
-    margin-left: auto;
+    margin-top: 10px;
+    margin-left: 170px;
     display: flex;
-    &_mark {
-      vertical-align: middle;
-
-    }
-    &_value {
-      font-weight: 500;
-      font-size: 14px;
-      color: #000000;
-    }
+    //&_mark {
+    //  margin-top: 7px;
+    //  padding-right: 6px;
+    //}
+    //&_value {
+    //  font-weight: 500;
+    //  font-size: 14px;
+    //  color: #000000;
+    //}
   }
   &__button {
-    position: absolute;
-    
+
   }
 }
 .page__title {

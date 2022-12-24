@@ -6,11 +6,13 @@ import "./AddToFavoriteButtonCircle.scss";
 
 const AddToFavoriteButtonCircle = () => {
     return (
-        <button className="fav">
-            <AddToFavCircle className="fav__circle"/>
-            <VerticalLine className="fav__vertical"/>
-            <HorizontalLine className="fav__horizontal"/>
-        </button>
+        <div className="fav">
+            <button className="fav__button">
+                <AddToFavCircle className="fav__circle"/>
+                <VerticalLine className="fav__vertical"/>
+                <HorizontalLine className="fav__horizontal"/>
+            </button>
+        </div>
     );
 };
 
