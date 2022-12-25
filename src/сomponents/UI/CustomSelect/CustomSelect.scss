@@ -42,6 +42,7 @@
 .select-icon {
   transform: rotate(180deg);
   float: right;
-  margin-right: 15px;
-  padding-top: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px
 }

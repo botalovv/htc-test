@@ -12,7 +12,6 @@ import {ReactComponent as CharacterWrap} from "../icons/CharacterWrap.svg";
 const Characters = () => {
 
     const [characters, setCharacters] = useState([]);
-    const [view, setView] = useState('');
 
     useEffect(() => {
         fetch("https://rickandmortyapi.com/api/character")
@@ -25,31 +24,31 @@ const Characters = () => {
     }, [])
 
     return (
-        <div>
+        <div className="page">
             <Navbar/>
             <BackButton/>
             <h3 className="page__title">Персонажи</h3>
             <div className="page__filtration">
                 <div className="page__filtration_name">
-                    <p className="page__p">
+                    <p className="page__filtration_p">
                         Поиск по имени
                     </p>
-                    <AuthInput type="text" placeholder="Введите имя персонажа"/>
+                    <AuthInput id="firstInput" type="text" placeholder="Введите имя персонажа"/>
                 </div>
                 <div className="page__filtration_race">
-                    <p className="page__p">
+                    <p className="page__filtration_p">
                         Поиск по расе
                     </p>
-                    <AuthInput type="text" placeholder="Введите расу персонажа"/>
+                    <AuthInput id="secondInput" type="text" placeholder="Введите расу персонажа"/>
                 </div>
                 <div className="page__filtration_status">
-                    <p className="page__p">
+                    <p className="page__filtration_p">
                         Поиск по статусу
                     </p>
-                    <CustomSelect/>
+                    <CustomSelect className="page__filtration_input"/>
                 </div>
                 <div className="page__button">
-                    <p className="page__p">
+                    <p className="page__button_p">
                         Вид:
                     </p>
                     <button className="page__button_list">

@@ -1,42 +1,78 @@
 .page {
+  max-width: 1170px;
   &__title {
   text-align: center;
   margin-top: 35px;
   }
+
   &__filtration {
     display: flex;
     margin-top: 35px;
-
-  }
-  &_name {
-    width: 370px;
-  }
-  &_race {
-    width: 270px;
-    margin-left: 30px;
-  }
-  &_status {
-    width: 270px;
-  }
-  &__button {
-    margin-left: auto;
-    width: 60px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    &_name {
+      width: 370px;
+    }
+    &_race {
+      width: 270px;
+    }
+    &_status {
+      width: 270px;
+    }
+    &_input {
+
+    }
+    &_p {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #000000;
+    }
   }
-  &__button_list {
-    border: none;
-    outline: none;
+
+  &__button {
+    margin-left: 40px;
+    width: 90px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    &_list {
+      width: 24px;
+      height: 24px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    &_wrap {
+      width: 24px;
+      height: 24px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    &_p {
+      margin-bottom: 90px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #000000;
+    }
   }
-  &__button_wrap {
-    border: none;
-    outline: none;
-  }
-  &__p {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    color: #000000;
 
 
-  }
+
+}
+
+#firstInput {
+  width: 370px;
+}
+
+#secondInput {
+  width: 270px;
+
 }
