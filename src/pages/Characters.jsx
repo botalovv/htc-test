@@ -12,6 +12,7 @@ import {ReactComponent as CharacterWrap} from "../icons/CharacterWrap.svg";
 const Characters = () => {
 
     const [characters, setCharacters] = useState([]);
+    const [selectedSort, setSelectedSort] = useState("");
 
     useEffect(() => {
         fetch("https://rickandmortyapi.com/api/character")
@@ -20,8 +21,40 @@ const Characters = () => {
             })
             .then((data) => {
                 setCharacters(data.results)
+
             })
     }, [])
+
+    const sortCharacters = (sort) => {
+        setSelectedSort(sort);
+        if(sort === "Alive") {
+            fetch("https://rickandmortyapi.com/api/character?status=alive")
+                .then((res) => {
+                    return res.json();
+                })
+                .then((data) => {
+                    setCharacters(data.results)
+                });
+        }
+        if(sort === "unknown") {
+            fetch("https://rickandmortyapi.com/api/character?status=unknown")
+                .then((res) => {
+                    return res.json();
+                })
+                .then((data) => {
+                    setCharacters(data.results)
+                });
+        }
+        if(sort === "Dead") {
+            fetch("https://rickandmortyapi.com/api/character?status=dead")
+                .then((res) => {
+                    return res.json();
+                })
+                .then((data) => {
+                    setCharacters(data.results)
+                });
+        }
+    }
 
     return (
         <div className="page">
@@ -45,7 +78,15 @@ const Characters = () => {
                     <p className="page__filtration_p">
                         Поиск по статусу
                     </p>
-                    <CustomSelect className="page__filtration_input"/>
+                    <CustomSelect
+                        value={selectedSort}
+                        onChange={sortCharacters}
+                        options={[
+                            {value: "Alive", name: "Живой"},
+                            {value: "Dead", name: "Мертв"},
+                            {value: "unknown", name: "Неизвестно"}
+                        ]}
+                    />
                 </div>
                 <div className="page__button">
                     <p className="page__button_p">

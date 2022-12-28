@@ -21,7 +21,6 @@ const EpisodeItem = ({episode}) => {
         }))
 
 
-    //
     return (
         <div className="episode">
             <div className="episode__container">

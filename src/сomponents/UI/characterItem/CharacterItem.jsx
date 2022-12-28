@@ -15,7 +15,7 @@ const CharacterItem = (props) => {
 
            <div className={listClass}>
                <div className="item__button_container">
-                   <AddToFavoriteButtonCircle className="item__button" onClick={console.log(1)}/>
+                   <AddToFavoriteButtonCircle className="item__button"/>
                </div>
                <div>
                  <img className="item__image item-list__image" src={props.character.image} alt=""/>
@@ -35,18 +35,6 @@ const CharacterItem = (props) => {
                            {props.character.status}
                        </p>
                    </div>
-
-                   {/*<GreenMark className="item__status_mark" />*/}
-                   {/*<p className="item__status_value">*/}
-                   {/*    {props.character.status}*/}
-                   {/*</p>*/}
-                   {/*<div className="item__status">*/}
-                   {/*    <GreenMark className="item__status_mark" />*/}
-                   {/*    <p className="item__status_value">*/}
-                   {/*        {props.character.status}*/}
-                   {/*    </p>*/}
-                   {/*</div>*/}
-
                </div>
                <div className="item__race">
                    <p className="item__race_sample">
