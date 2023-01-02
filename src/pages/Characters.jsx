@@ -13,6 +13,8 @@ const Characters = () => {
 
     const [characters, setCharacters] = useState([]);
     const [selectedSort, setSelectedSort] = useState("");
+    const [searchNameQuery, setSearchNameQuery] = useState("");
+    const [searchRaceQuery, setSearchRaceQuery] = useState("");
 
     useEffect(() => {
         fetch("https://rickandmortyapi.com/api/character")
@@ -23,37 +25,21 @@ const Characters = () => {
                 setCharacters(data.results)
 
             })
-    }, [])
+    }, []);
+
+    const searchCharacters = (name) => {
+
+    }
 
     const sortCharacters = (sort) => {
         setSelectedSort(sort);
-        if(sort === "Alive") {
-            fetch("https://rickandmortyapi.com/api/character?status=alive")
-                .then((res) => {
-                    return res.json();
-                })
-                .then((data) => {
-                    setCharacters(data.results)
-                });
-        }
-        if(sort === "unknown") {
-            fetch("https://rickandmortyapi.com/api/character?status=unknown")
-                .then((res) => {
-                    return res.json();
-                })
-                .then((data) => {
-                    setCharacters(data.results)
-                });
-        }
-        if(sort === "Dead") {
-            fetch("https://rickandmortyapi.com/api/character?status=dead")
-                .then((res) => {
-                    return res.json();
-                })
-                .then((data) => {
-                    setCharacters(data.results)
-                });
-        }
+        fetch(`https://rickandmortyapi.com/api/character/?status=${sort}`)
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                setCharacters(data.results)
+            });
     }
 
     return (
@@ -66,13 +52,23 @@ const Characters = () => {
                     <p className="page__filtration_p">
                         Поиск по имени
                     </p>
-                    <AuthInput id="firstInput" type="text" placeholder="Введите имя персонажа"/>
+                    <AuthInput
+                        value={searchNameQuery}
+                        onChange={e => setSearchNameQuery(e.target.value)}
+                        id="firstInput"
+                        type="text"
+                        placeholder="Введите имя персонажа"/>
                 </div>
                 <div className="page__filtration_race">
                     <p className="page__filtration_p">
                         Поиск по расе
                     </p>
-                    <AuthInput id="secondInput" type="text" placeholder="Введите расу персонажа"/>
+                    <AuthInput
+                        value={searchRaceQuery}
+                        onChange={e => setSearchRaceQuery(e.target.value)}
+                        id="secondInput"
+                        type="text"
+                        placeholder="Введите расу персонажа"/>
                 </div>
                 <div className="page__filtration_status">
                     <p className="page__filtration_p">
