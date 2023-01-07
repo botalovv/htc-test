@@ -7,6 +7,8 @@ import AuthInput from "../сomponents/UI/authInput/AuthInput";
 import CustomSelect from "../сomponents/UI/CustomSelect/CustomSelect";
 import {ReactComponent as CharacterList} from "../icons/CharacterList.svg";
 import {ReactComponent as CharacterWrap} from "../icons/CharacterWrap.svg";
+import {ReactComponent as NextPage} from "../icons/NextPage.svg";
+import {ReactComponent as PrevPage} from "../icons/PrevPage.svg";
 
 
 const Characters = () => {
@@ -15,21 +17,21 @@ const Characters = () => {
     const [selectedSort, setSelectedSort] = useState("");
     const [searchNameQuery, setSearchNameQuery] = useState("");
     const [searchRaceQuery, setSearchRaceQuery] = useState("");
+    const [characterObject, setCharacterObject] = useState("")
+    const [page, setPage] = useState("https://rickandmortyapi.com/api/character");
 
     useEffect(() => {
-        fetch("https://rickandmortyapi.com/api/character")
+        fetch(page)
             .then((res) => {
                 return res.json();
+
             })
             .then((data) => {
                 setCharacters(data.results)
-
+                setCharacterObject(data.info)
             })
-    }, []);
+    }, [characterObject]);
 
-    const searchCharacters = (name) => {
-
-    }
 
     const sortCharacters = (sort) => {
         setSelectedSort(sort);
@@ -40,6 +42,19 @@ const Characters = () => {
             .then((data) => {
                 setCharacters(data.results)
             });
+    }
+
+    const prevPage = () => {
+        if (characterObject.prev != null) {
+            setPage(characterObject.prev)
+            console.log(characterObject)
+        }
+
+    }
+
+    const nextPage = () => {
+        setPage(characterObject.next)
+        console.log(characterObject)
     }
 
     return (
@@ -101,6 +116,17 @@ const Characters = () => {
             {characters.map(character =>
                 <CharacterItem character={character} key={character.id}/>
             )}
+            </div>
+            <div className="pagination">
+                <button onClick={prevPage} className="pagination__button">
+                    <PrevPage className="pagination__svg pagination__svg_prev"/>
+                    <p className="pagination__p pagination__p_prev">Предыдущая</p>
+                </button>
+
+                <button onClick={nextPage} className="pagination__button">
+                    <p className="pagination__p pagination__p_next">Следующая</p>
+                    <NextPage className="pagination__svg pagination__svg_next"/>
+                </button>
             </div>
         </div>
     );
