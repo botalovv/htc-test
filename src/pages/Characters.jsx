@@ -18,20 +18,22 @@ const Characters = () => {
     const [searchNameQuery, setSearchNameQuery] = useState("");
     const [searchRaceQuery, setSearchRaceQuery] = useState("");
     const [characterObject, setCharacterObject] = useState("")
-    const [page, setPage] = useState("https://rickandmortyapi.com/api/character");
+    const [page, setPage] = useState(1);
 
     useEffect(() => {
-        fetch(page)
+        fetchCharacters()
+    }, [page]);
+
+    const fetchCharacters = () => {
+        fetch(`https://rickandmortyapi.com/api/character?page=${page}&status=${selectedSort}`)
             .then((res) => {
                 return res.json();
-
             })
             .then((data) => {
                 setCharacters(data.results)
                 setCharacterObject(data.info)
             })
-    }, [characterObject]);
-
+    }
 
     const sortCharacters = (sort) => {
         setSelectedSort(sort);
@@ -46,15 +48,12 @@ const Characters = () => {
 
     const prevPage = () => {
         if (characterObject.prev != null) {
-            setPage(characterObject.prev)
-            console.log(characterObject)
+            setPage(page - 1);
         }
-
     }
 
     const nextPage = () => {
-        setPage(characterObject.next)
-        console.log(characterObject)
+        setPage(page + 1);
     }
 
     return (
@@ -110,7 +109,6 @@ const Characters = () => {
                         <CharacterWrap/>
                     </button>
                 </div>
-
             </div>
             <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-between"}}>
             {characters.map(character =>
