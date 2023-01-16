@@ -22,10 +22,10 @@ const Characters = () => {
 
     useEffect(() => {
         fetchCharacters()
-    }, [page]);
+    }, [page, searchNameQuery]);
 
     const fetchCharacters = () => {
-        fetch(`https://rickandmortyapi.com/api/character?page=${page}&status=${selectedSort}`)
+        fetch(`https://rickandmortyapi.com/api/character?page=${page}&status=${selectedSort}&name=${searchNameQuery}`)
             .then((res) => {
                 return res.json();
             })
@@ -35,7 +35,7 @@ const Characters = () => {
             })
     }
 
-    const sortCharacters = (sort) => {
+    const sortStatusCharacters = (sort) => {
         setSelectedSort(sort);
         fetch(`https://rickandmortyapi.com/api/character/?status=${sort}`)
             .then((res) => {
@@ -90,7 +90,7 @@ const Characters = () => {
                     </p>
                     <CustomSelect
                         value={selectedSort}
-                        onChange={sortCharacters}
+                        onChange={sortStatusCharacters}
                         options={[
                             {value: "Alive", name: "Живой"},
                             {value: "Dead", name: "Мертв"},
