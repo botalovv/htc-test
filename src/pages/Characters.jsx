@@ -22,10 +22,10 @@ const Characters = () => {
 
     useEffect(() => {
         fetchCharacters()
-    }, [page, searchNameQuery]);
+    }, [page, searchNameQuery, searchRaceQuery]);
 
     const fetchCharacters = () => {
-        fetch(`https://rickandmortyapi.com/api/character?page=${page}&status=${selectedSort}&name=${searchNameQuery}`)
+        fetch(`https://rickandmortyapi.com/api/character?page=${page}&status=${selectedSort}&name=${searchNameQuery}&species=${searchRaceQuery}`)
             .then((res) => {
                 return res.json();
             })
