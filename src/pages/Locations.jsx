@@ -18,7 +18,7 @@ const Locations = () => {
 
     useEffect(() => {
         fetchLocations()
-    }, [])
+    }, [page,searchLocations, searchByDimension, searchByType])
 
     const fetchLocations = () => {
         fetch(`https://rickandmortyapi.com/api/location?page=${page}&name=${searchLocations}&type=${searchByType}&dimension=${searchByDimension}`)
@@ -39,7 +39,6 @@ const Locations = () => {
 
     const nextPage = () => {
         setPage(page + 1);
-        console.log(page)
     }
 
 
